@@ -1,0 +1,33 @@
+# ---- Build / LaTeX scratch (auto-generated during compilation) ----
+_*.log
+_*.out
+_*.pn
+_f_*.tex
+_g*.tex
+_p*.tex
+_sw_*.tex
+_sweep_*.tex
+_probe_*.tex
+_coverletter*.tex
+_build*.log
+
+# ---- Debug / ablation artifacts ----
+_abl_*.csv
+__pycache__/
+*.pyc
+
+# ---- Superseded manuscript drafts ----
+paper.tex
+paper_v6.tex
+paper_v7.tex
+wsu_validation.tex
+pgfplot_code.tex
+
+# ---- Legacy / internal / tooling ----
+archive/
+.workbuddy/
+_writercheck/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
