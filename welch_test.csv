@@ -1,0 +1,3 @@
+comparison,mean_classical,std_classical,n_classical,mean_proposed,std_proposed,n_proposed,mean_diff_classical_minus_proposed,se_diff,t_stat,df_welch,p_two_sided,ci95_low,ci95_high,protocol
+"GCC-PHAT (classical, V3)",46.4,26.81,60,7.5,10.38,422,38.9,3.4978450723379657,11.121132924849405,61.53778921636815,2.3217482282395466e-16,31.906862496055712,45.89313750394428,V3 repaired dynamic-weighting protocol; non-paired Welch
+"SRP-PHAT (classical, V3)",46.16,25.04,60,7.5,10.38,422,38.66,3.271902374778164,11.815755964485694,61.913054705246374,1.6381681172971544e-17,32.11937763673456,45.20062236326543,V3 repaired dynamic-weighting protocol; non-paired Welch

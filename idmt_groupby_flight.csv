@@ -1,0 +1,17 @@
+eval_mode,flight_prefix,drone_type,n_segments,n_gt_gt180,folded_mae,folded_sd,unfolded_routeA_mae,unfolded_routeB_mae
+zero_shot,Align_random_flights,Align,16,4,44.0179,11.4974,95.9353,62.5048
+zero_shot,Mavic_static_flights_01,Mavic,24,10,57.4911,12.4483,100.8502,82.4362
+zero_shot,Mavic_static_flights_02,Mavic,8,4,51.0997,9.4487,128.8821,88.4056
+zero_shot,Phantom4-linear_flight-01,Phantom4,11,2,22.9853,7.2984,56.8002,43.6952
+zero_shot,Phantom4-linear_flight-02,Phantom4,45,19,40.5803,15.0941,90.5775,80.2787
+zero_shot,Phantom4-random_flight-01,Phantom4,17,7,39.1527,10.2731,111.8418,75.1928
+zero_shot,Phantom4-static-flight,Phantom4,28,8,57.1933,13.9821,115.1276,78.9159
+zero_shot,Phantom4-static-flight-02,Phantom4,14,14,41.8673,20.4422,138.1751,138.1327
+fine_tuned,Align_random_flights,Align,16,4,26.7247,9.0236,81.8075,56.0396
+fine_tuned,Mavic_static_flights_01,Mavic,24,10,10.7299,12.0778,75.9689,74.801
+fine_tuned,Mavic_static_flights_02,Mavic,8,4,18.6158,19.5206,117.9309,102.1647
+fine_tuned,Phantom4-linear_flight-01,Phantom4,11,2,20.993,11.3953,34.7372,39.488
+fine_tuned,Phantom4-linear_flight-02,Phantom4,45,19,22.1819,7.9581,78.1554,79.4849
+fine_tuned,Phantom4-random_flight-01,Phantom4,17,7,30.9658,11.0923,85.4939,78.0458
+fine_tuned,Phantom4-static-flight,Phantom4,28,8,7.7326,6.5338,53.2185,53.7608
+fine_tuned,Phantom4-static-flight-02,Phantom4,14,14,9.7622,7.5565,171.2772,170.2378

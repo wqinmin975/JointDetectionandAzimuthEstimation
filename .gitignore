@@ -11,6 +11,14 @@ _probe_*.tex
 _coverletter*.tex
 _build*.log
 
+# ---- LaTeX / compile intermediates ----
+*.aux
+*.bbl
+*.blg
+*.doc
+compile_*.log
+*.png
+
 # ---- Debug / ablation artifacts ----
 _abl_*.csv
 __pycache__/

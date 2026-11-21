@@ -1,0 +1,11 @@
+,Pd,Pfa,MAE (deg)
+Proposed (V3 masked circular),1.0,0.0,7.50±10.38
+Detection-Only (untrained ang head),1.0,0.0,46.34±26.12
+Localization-Only (untrained det head),1.0,1.0,5.95±10.84
+Solo-Det (properly trained single-task),1.0,0.0,N/A
+Solo-Loc (properly trained single-task),N/A,N/A,5.95±10.84
+Fixed λ=0.1,1.0,0.0,6.85±12.80
+Fixed λ=1.0,1.0,0.0,5.62±10.30
+Fixed λ=2.0,1.0,0.0,7.43±13.49
+GCC-PHAT (classical),0.9977272727272727,0.05,46.40±26.81
+SRP-PHAT (classical),0.9977272727272727,0.05,46.16±25.04
