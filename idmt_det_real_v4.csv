@@ -1,0 +1,2 @@
+dataset_pos,dataset_neg,domain,n_pos,n_neg,det_th,Pd,Pfa,roc_auc,pos_score_mean,neg_score_mean,neg_score_p95,sec,seed_neg_windows
+IDMT MicArrayData30s (8ch cubic),"WSU test_2 no_drone_2 (24ch array, 8ch subset)",CROSS-DOMAIN EXPLORATORY,4890,861,0.5,1.0,0.5412311265969802,0.9982426388681065,0.9985648989677429,0.5470149517059326,0.9427205920219421,23.423388957977295,0

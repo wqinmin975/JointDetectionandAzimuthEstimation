@@ -1,0 +1,5 @@
+experiment,variant,n,snr_db,seed_train,seed_test,mae_deg,mae_std,pair_diff_deg,sec
+geom_ablation_8mic_GCC,proposed_with_geom,600,-5,42,20240517,2.2498718329009195,1.7913821311698028,,33.78084468841553
+geom_ablation_8mic_GCC,no_geom,600,-5,42,20240517,2.9479816678514,2.304890982022308,0.6981098349504803,28.090555906295776
+geom_ablation_6mic_ULA_structural,proposed_v3_repro,600,-5,42,0,7.499045047444955,10.384595404719898,0.0,85.25637793540955
+geom_ablation_6mic_ULA_structural,no_geom_identical_network,600,-5,42,0,7.499045047444955,10.384595404719898,0.0,0.0

@@ -1,0 +1,10 @@
+{
+  "proposed_20ep_mae": 6.801347138772041,
+  "proposed_30ep_mae": 4.20363516816465,
+  "fixed_lam1_20ep_mae": 4.9714927664488915,
+  "fixed_lam1_30ep_mae": 4.244011411253834,
+  "proposed_gain_20_to_30": 2.5977119706073903,
+  "fixed_gain_20_to_30": 0.7274813551950574,
+  "total_sec": 494.5248749256134,
+  "method": "v3.train_synthetic_ula cloned line-for-line with grad-norm hooks; seed=42 dataset+shuffle; paired 600-sample -5dB testset; backbone grad norm = L2 over backbone parameters, batch-averaged."
+}

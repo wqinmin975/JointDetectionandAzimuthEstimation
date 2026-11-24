@@ -1,0 +1,9 @@
+{
+  "gain": 4191.183635132974,
+  "n_segments": 163,
+  "n_windows": 4890,
+  "n_gt180": 68,
+  "total_sec": 296.613703250885,
+  "v3_real_gt_note": "interp_azi_at returns [0,360) (v3 L920-930); v3.real_finetune L1027 folds with %180; v3.real_eval L992 folds GT for reporting.",
+  "folded_v1_baseline_mae": 18.0537010354323
+}

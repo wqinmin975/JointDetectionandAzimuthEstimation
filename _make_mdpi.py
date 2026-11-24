@@ -35,7 +35,7 @@ i_bio = body.find("\\section*{Author biographies}")
 if i_bio >= 0:
     body = body[:i_bio]
 # scale the architecture tikzpicture once (only the arch block starts with font=\footnotesize,)
-body = body.replace("    font=\\footnotesize,", "    scale=0.82, transform shape, font=\\footnotesize,", 1)
+body = body.replace("    font=\\small,", "    scale=0.72, transform shape, font=\\small,", 1)
 
 # ---- MDPI preamble + frontmatter ----
 preamble = (
@@ -61,7 +61,8 @@ preamble = (
     "\\pgfplotsset{compat=1.17}\n"
     "\\usetikzlibrary{arrows.meta,positioning,calc,fit}\n"
     "\\usepackage{subcaption}\n"
-    "\\usepackage{siunitx}\n\n"
+    "\\usepackage{siunitx}\n"
+    "\\emergencystretch=2em\n\n"
     "% Author ORCID identifiers\n"
     "\\newcommand{\\orcidauthorA}{0009-0006-0447-0482} % Qinmin Wang\n"
     "\\newcommand{\\orcidauthorD}{0009-0007-4278-771X} % Hongyuan Wang\n"

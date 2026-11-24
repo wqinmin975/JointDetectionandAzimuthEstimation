@@ -1,0 +1,9 @@
+{
+  "notes": [
+    "8mic GCC: paired n=600 95%CI=(+0.526,+0.870) deg",
+    "ULA branch (JointDetDOANetRaw, v3 L191-206) contains NO geom_enc/fuse; the 7.50\u00b110.38 baseline cannot exhibit a geometry ablation. The informative ablation is the 8-mic GCC branch above."
+  ],
+  "total_sec": 216.40896320343018,
+  "v3_real_branch_logvar_note": "v3.pretrain_cubic_for_real L599 passes only model.parameters() to Adam; log_var_det/ang stay 0 -> 0.5/0.5 weights. Replicated exactly here. Only ULA proposed (v3 L690-691) optimizes log_var.",
+  "ula_rng_note": "v3 evaluates SNRs sequentially with global numpy RNG; -5dB test set is the state AFTER the -10dB pass. Verified seed_test=0 with that state reproduces data_snr_v3.csv @-5dB to 6 decimals (7.499045). Both ULA variants evaluated on the identical paired samples."
+}

@@ -71,16 +71,20 @@ if roc_t2_s[0] is not None:
              label=f"test2 only (SRP-power) AUC={auc(*roc_t2_s):.2f}")
 ax1.set_xlabel("False-alarm rate $P_{fa}$"); ax1.set_ylabel("Detection rate $P_d$")
 ax1.set_title("WSU UAV detection ROC (drone vs ambient)")
-ax1.legend(fontsize=7, loc="lower right"); ax1.grid(alpha=0.3)
+ax1.legend(fontsize=6.5, ncol=2, loc="lower right", framealpha=0.9); ax1.grid(alpha=0.3)
 ax1.set_xlim(0, 1); ax1.set_ylim(0, 1.02)
 
 # Azimuth MAE bars (folded, paper convention)
 jobs = ["test1\n(site 2)", "test2_drone\n(site 1)"]
 gcc = [d1.gcc_err.mean(), d2.gcc_err.mean()]
 srp = [d1.srp_err.mean(), d2.srp_err.mean()]
+gcc_std = [d1.gcc_err.std(), d2.gcc_err.std()]
+srp_std = [d1.srp_err.std(), d2.srp_err.std()]
 x = np.arange(len(jobs)); w = 0.35
-ax2.bar(x - w/2, gcc, w, label="GCC-PHAT", color="#4c72b0")
-ax2.bar(x + w/2, srp, w, label="SRP-PHAT", color="#dd8452")
+ax2.bar(x - w/2, gcc, w, yerr=gcc_std, capsize=3,
+        label="GCC-PHAT", color="#4c72b0", ecolor="black", error_kw={"lw": 0.8})
+ax2.bar(x + w/2, srp, w, yerr=srp_std, capsize=3,
+        label="SRP-PHAT", color="#dd8452", ecolor="black", error_kw={"lw": 0.8})
 for i, (g, s) in enumerate(zip(gcc, srp)):
     ax2.text(i - w/2, g + 1, f"{g:.1f}", ha="center", fontsize=8)
     ax2.text(i + w/2, s + 1, f"{s:.1f}", ha="center", fontsize=8)
@@ -89,7 +93,8 @@ ax2.set_xticks(x); ax2.set_xticklabels(jobs, fontsize=9)
 ax2.set_ylabel("Azimuth MAE (deg, folded to [0,180))")
 ax2.set_title("Classical DOA baselines on real GPS-labeled field data")
 ax2.legend(fontsize=8); ax2.grid(alpha=0.3, axis="y")
-ax2.set_ylim(0, max(max(gcc), max(srp)) * 1.25)
+ax2.set_ylim(0, max(gcc[0] + gcc_std[0], gcc[1] + gcc_std[1],
+                    srp[0] + srp_std[0], srp[1] + srp_std[1]) * 1.08)
 
 fig.tight_layout()
 out = os.path.join(HERE, "wsu_roc.png")
